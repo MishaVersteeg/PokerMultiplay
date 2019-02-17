@@ -31,11 +31,14 @@ When the game is started data management is maintained briefly as fallows:
 Before any cards are dealt relevant properties are populated (e.g stacks, seatsByServer). These properties keep track of the ‘global’ data. ‘global’ as opposed to ‘inHand’ whereas the latter keeps track of data that is relevant to a round (or hand) itself.
 For example, there is a property called ‘PMIP_ForEach’. PMIP is general poker jargon for put money in pot. This property is solely used for data management of the hand action itself. When a new hand starts, the content of these arrays, if needed, are copied to the global properties and empties before the new hand starts. Other arrays for ‘inHand-’ data management properties are e.g. ‘stacksInHand’ and ‘playersInHand.
 
+
 Short-term prospects:
 -	finalization of coding game logic
 -	further implementation of Vue. For now, Vue is only implemented to facilitate the employment of the SPA. Vue is able to do much more
 -	GUI enhancement
 -	functionality, e.g. game settings customization
+
+
 Long-term prospects:
 -	cross-platform mobile client support (React Native)
 -	enhanced GUI experience
