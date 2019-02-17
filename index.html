@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+        <script src="https://unpkg.com/lodash@4.16.6"></script>
+    </head>
+    <body>
+
+
+         
+    <div id="handleHTML">
+       
+        <div v-if="createJoinGame" id="createJoinGame" >
+
+            <h1>CREATE OR JOIN GAME:</h1>
+
+            <input type="text" placeholder="Create gameID" id="createGameID">
+            <input type="button" onclick="createGame()" value="send" >
+            <b id="messageCreategame"></b>
+            
+            <p>or</p>
+        
+            <input type="text" placeholder="Join GameID" id="submitGameID">
+            <input type="button" onclick="joinGame()" value="send" >
+            <b id="messageJoingame"></b>
+
+        </div>
+        
+        <div v-if="lobbyGame" id="lobbyGame" >
+
+            <h1>LOBBY</h1>
+    
+            <input type="text" placeholder="Create name" id="submitName">
+            <input type="button" onclick="submitName()" value="send" id="buttonSubmitName">
+            <div id="startGame">
+                    <input type="button" onclick="startGame()" value="Start Game!" id="buttonStartGame">
+                    </div>
+                    
+
+                    <H2>players:</H2>
+
+                    <div v-for="value in registerdPlayers" >
+                        <div v-for="key in value">
+                        <ul>{{key}}</ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!--------------------------> 
+
+                <div v-if="game" id="game">
+                    
+                    <h2 id="gameID"></h2>
+    
+                    <div id="message" ></div>
+                    <div id="hand" ></div>
+                    
+                    <div id="seat0">
+                        <img id="seat0Card0" src="">
+                        <img id="seat0Card1" src="">
+                        <div id="seat0Name"></div>
+                        <div id="seat0Stack"></div>
+                    </div>
+                    <div id="chipsOnTable0"></div>
+        
+                    <div id="seat1">
+                        <img id="seat1Card0" src="">
+                        <img id="seat1Card1" src="">
+                        <div id="seat1Name"></div>
+                        <div id="seat1Stack"></div>
+                    </div>
+                    <div id="chipsOnTable1"></div>
+
+                    <div id="seat2">
+                        <img id="seat2Card0" src="">
+                        <img id="seat2Card1" src="">
+                        <div id="seat2Name"></div>
+                        <div id="seat2Stack"></div>
+                    </div>
+                    <div id="chipsOnTable2"></div>
+
+                    <div id="seat3">
+                        <img id="seat3Card0" src="">
+                        <img id="seat3Card1" src="">
+                        <div id="seat3Name"></div>
+                        <div id="seat3Stack"></div>
+                    </div>
+                    <div id="chipsOnTable3"></div>
+
+                    <div id="seat4">
+                        <img id="seat4Card0" src="">
+                        <img id="seat4Card1" src="">
+                        <div id="seat4Name"></div>
+                        <div id="seat4Stack"></div>
+                    </div>
+                    <div id="chipsOnTable4"></div>
+        
+                    <div id="seat5">
+                        <img id="seat5Card0" src="">
+                        <img id="seat5Card1" src="">
+                        <div id="seat5Name"></div>
+                        <div id="seat5Stack"></div>
+                    </div>
+                    <div id="chipsOnTable5"></div>
+
+                    <div id="seat6">
+                        <img id="seat6Card0" src="">
+                        <img id="seat6Card1" src="">
+                        <div id="seat6Name"></div>
+                        <div id="seat6Stack"></div>
+                    </div>
+                    <div id="chipsOnTable6"></div>
+
+                    <div id="seat7">
+                        <img id="seat7Card0" src="">
+                        <img id="seat7Card1" src="">
+                        <div id="seat7Name"></div>
+                        <div id="seat7Stack"></div>
+                    </div>
+                    <div id="chipsOnTable7"></div>
+
+                    <div id="seat8">
+                        <img id="seat8Card0" src="">
+                        <img id="seat8Card1" src="">
+                        <div id="seat8Name"></div>
+                        <div id="seat8Stack"></div>
+                    </div>
+                    <div id="chipsOnTable8"></div>
+
+                    <div id="seat9">
+                        <img id="seat9Card0" src="">
+                        <img id="seat9Card1" src="">
+                        <div id="seat9Name"></div>
+                        <div id="seat9Stack"></div>
+                    </div>
+                    <div id="chipsOnTable9"></div>
+
+                    <div id="flop">
+                        <img id="flop0" src="cards/back.jpg"> 
+                        <img id="flop1" src="cards/back.jpg"> 
+                        <img id="flop2" src="cards/back.jpg"> 
+                    </div>
+                        <img id="turn"  src="cards/back.jpg"> 
+                        <img id="river" src="cards/back.jpg"> 
+              
+
+                    <div id="chipsOnTableAll"></div>
+                    <div id="chipsOnTableAllSide"></div>
+                    <div id="buttonFoldCheck" ></div>
+                    <div id="buttonBetCall" ></div>
+                    <div id="buttonraise2" ></div>
+                    <div id="buttonRaise2_5" ></div>
+                    <div id="slider" ></div>
+                        
+                </div>
+                
+        <script src="client.js"></script>
+    </body>
+</html>

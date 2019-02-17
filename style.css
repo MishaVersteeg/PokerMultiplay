@@ -1,0 +1,252 @@
+
+
+#createJoinGame{
+    padding: 100px;
+}
+
+#lobbyGame {
+    padding: 100px;
+}
+
+#game {
+    padding-left: 100px
+}
+
+#gameID {
+    top: 20px;
+    left: 20px;
+}
+
+#message {
+    position: absolute;
+    top: 565px;
+    left: 550px;
+    text-align: center;
+}
+
+#flop {
+    position: absolute;
+    top: 210px;
+    left: 480px;
+}
+
+#turn {
+    position: absolute;
+    top: 210px;
+    left: 710px;
+}
+
+#river {
+    position: absolute;
+    top: 210px;
+    left: 790px;
+}
+
+#buttonFoldCheck {
+    position: absolute;
+    top: 450px;
+    left: 1060px;
+}
+
+#buttonBetCall { /* or complete SB */
+    position: absolute;
+    top: 480px;
+    left: 1060px;
+}
+
+#buttonraise2 {
+    position: absolute;
+    top: 510px;
+    left: 1060px;
+}
+
+#buttonRaise2_5 {
+    position: absolute;
+    top: 540px;
+    left: 1060px;
+}
+
+#seat0 {
+    position: absolute;
+    top: 400px;
+    left: 600px;
+}
+
+#chipsOnTableAll {
+    position: absolute;
+    top: 330px;
+    left: 600px;
+}
+
+#chipsOnTableAllSide {
+    position: absolute;
+    top: 330px;
+    left: 740px; 
+}
+
+#chipsOnTable0 {
+    position: absolute;
+    top: 370px;
+    left: 670px;   
+}
+
+#seat1 {
+    position: absolute;
+    top: 400px;
+    left: 300px;
+}
+
+#chipsOnTable1 {
+    position: absolute;
+    top: 370px;
+    left: 370px;
+}
+
+#seat2 {
+    position: absolute;
+    top: 290px;
+    left: 100px;
+}
+
+#chipsOnTable2 {
+    position: absolute;
+    top: 330px;
+    left: 260px;
+}
+
+#seat3 {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+}
+
+#chipsOnTable3 {
+    position: absolute;
+    top: 230px;
+    left: 260px;
+}
+
+#seat4 {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+
+#chipsOnTable4 {
+    position: absolute;
+    top: 190px;
+    left: 370px;
+}
+
+#seat5 {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+}
+
+#chipsOnTable5 {
+    position: absolute;
+    top: 190px;
+    left: 670px;
+}
+
+#seat6 {
+    position: absolute;
+    top: 20px;
+    left: 900px;
+}
+
+#chipsOnTable6 {
+    position: absolute;
+    top: 190px;
+    left: 950px;
+}
+
+#seat7 {
+    position: absolute;
+    top: 120px;
+    left: 1100px;
+}
+
+#chipsOnTable7 {
+    position: absolute;
+    top: 230px;
+    left: 1050px;
+}
+
+#seat8 {
+    position: absolute;
+    top: 290px;
+    left: 1100px;
+}
+
+#chipsOnTable8 {
+    position: absolute;
+    top: 330px;
+    left: 1050px;
+}
+
+#seat9 {
+    position: absolute;
+    top: 400px;
+    left: 900px;
+}
+
+#chipsOnTable9 {
+    position: absolute;
+    top: 370px;
+    left: 950px;
+}
+
+/*
+
+#table {
+    max-height: 100px;
+}
+
+
+#message {
+    position: absolute;
+    top: 150px;
+    left: 405px;
+    width: auto;
+    text-align: center
+}
+
+
+#player0 {
+    position: absolute;
+    top: 340px;
+    left: 450px;
+    width: 120px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#player0Card0 {
+    position: absolute;
+    top: 265px;
+    left: 450px;
+}
+
+#player1 {
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    border: solid;
+    width: 80px;
+    text-align: center
+}
+
+#player2 {
+    position: absolute;
+    top: 100px;
+    left: 720px;
+    border: solid;
+    width: 80px;
+    text-align: center
+}
+
